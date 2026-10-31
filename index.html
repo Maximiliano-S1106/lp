@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Krazy Barber · Agente IA 24/7</title><link rel="stylesheet" href="styles.css"></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="i-in" viewBox="0 0 24 24"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+<symbol id="i-split" viewBox="0 0 24 24"><path d="M16 3h5v5M8 3H3v5M12 22v-8.3a4 4 0 0 0-1.17-2.87L3 3M15 9l6-6"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+<symbol id="i-cut" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.1 8.1 12 12M20 4 8.1 15.9M14.8 14.8 20 20"/></symbol>
+</defs></svg>
+<div id="bar"></div>
+<nav><b><span>✂</span> Krazy Barber</b><div><a href="#sim">Simulador</a><a href="#costos">Costos</a><a href="#reglas">Reglas</a></div></nav>
+
+<section class="hero">
+ <div class="tags rv"><span class="tag g">n8n (Self-Hosted)</span><span class="tag g">Anthropic Claude 3.5 Sonnet</span><span class="tag">Supabase CRM</span><span class="tag">Google Calendar API</span><span class="tag w">Evolution API / Meta WhatsApp</span></div>
+ <h1 class="rv" style="--d:.1s">Agente IA 24/7 para <span class="g">Krazy Barber</span></h1>
+ <p class="lead rv" style="--d:.2s">Automatización total de reservas, reagendamiento y cancelaciones vía WhatsApp con Claude 3.5 Sonnet, n8n, Supabase y Google Calendar.</p>
+ <div class="cta rv" style="--d:.3s"><a class="btn gold" href="#sim">Probar Simulador</a><a class="btn" href="#costos">Ver Costos Operativos</a></div>
+ <div class="stats rv" style="--d:.4s"><div><b class="g">$8–13</b><span>USD al mes, todo incluido</span></div><div><b><span data-n="80">80</span>%</b><span>ahorro vs. plataformas</span></div><div><b class="w">24/7</b><span>sin pausa ni feriados</span></div><div><b data-n="3">3</b><span>agendas independientes</span></div></div>
+</section>
+
+<section id="sim" class="sim">
+ <div><h2>Mira cómo reserva <span class="g">tu cliente</span></h2><p class="m">Lenguaje natural, disponibilidad real y aviso al barbero en el mismo instante.</p>
+  <div class="tabs"><button class="tab on" data-flow="book">Reservar</button><button class="tab" data-flow="re">Reagendar</button><button class="tab" data-flow="ca">Cancelar</button></div>
+  <div class="tabs"><button class="tab on" data-barber="Franco">Franco</button><button class="tab" data-barber="Alexis">Alexis</button><button class="tab" data-barber="Mauro">Mauro</button></div></div>
+ <div class="ph"><header><span class="av">✂</span><div>Krazy Barber<small>Agente IA · en línea</small></div></header>
+  <div id="notif"><small>WhatsApp personal del barbero</small><span></span></div>
+  <div id="chat"></div><footer><button class="btn" id="replay" style="padding:8px 16px"><svg class="i"><use href="#i-send"/></svg> Repetir</button></footer></div>
+</section>
+
+<section><h2 class="rv">4 pasos. <span class="g">Cero fricción.</span></h2>
+ <div class="steps">
+  <div class="card step rv"><svg class="i"><use href="#i-in"/></svg><h3>Webhook Entrada</h3><p>El mensaje de WhatsApp llega a n8n al instante.</p></div>
+  <div class="card step rv" style="--d:.1s"><svg class="i"><use href="#i-cpu"/></svg><h3>Agente IA</h3><p>Claude 3.5 Sonnet + memoria: entiende la intención y el contexto del cliente.</p></div>
+  <div class="card step rv" style="--d:.2s"><svg class="i"><use href="#i-plug"/></svg><h3>Integraciones (Tools)</h3><p>Verifica y modifica Google Calendar. Lee y escribe en Supabase CRM.</p></div>
+  <div class="card step rv" style="--d:.3s"><svg class="i"><use href="#i-split"/></svg><h3>Salida Doble</h3><p>Confirmación al cliente y aviso automático al barbero asignado.</p></div>
+ </div></section>
+
+<section id="costos"><h2 class="rv">Costo real: <span class="g">~$8–13 USD al mes</span></h2>
+ <div class="two">
+  <div class="rv"><div class="list">
+   <div class="row"><div>Servidor VPS Hetzner<small>Hosting de n8n y Evolution API</small></div><b class="g">~$5</b></div>
+   <div class="row"><div>API Anthropic · Claude 3.5 Sonnet<small>~500 conversaciones al mes</small></div><b class="g">$3–8</b></div>
+   <div class="row"><div>WhatsApp API (Meta / Evolution)<small>Dentro de 1.000 conversaciones gratis</small></div><b class="w">$0</b></div>
+   <div class="row"><div>Supabase CRM<small>Plan Free Starter</small></div><b class="w">$0</b></div>
+   <div class="row"><div>Google Calendar API<small>Gratuita</small></div><b class="w">$0</b></div></div>
+   <div class="total"><div>Total estimado<small class="m" style="display:block">~$8.000 – $13.000 CLP/mes</small></div><b>$8–13 USD</b></div></div>
+  <div class="rv bars" style="--d:.15s"><h3 class="g">Ahorro del 80% frente a plataformas tradicionales</h3>
+   <p><span>Krazy Barber IA</span><b class="g">$8.000–13.000 CLP</b></p><div class="bar"><i style="--w:25%;background:var(--g)"></i></div>
+   <p><span class="m">Agendamiento tradicional</span><b style="color:var(--r)">$40.000+ CLP</b></p><div class="bar"><i style="--w:100%;background:var(--r)"></i></div>
+   <p class="m" style="display:block;margin-top:24px">Sin comisiones por reserva. Control total de tus datos en tu propio Supabase.</p></div>
+ </div></section>
+
+<section id="reglas"><h2 class="rv">Reglas del negocio, <span class="g">ya integradas</span></h2>
+ <div class="two" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+  <div class="card rv"><h3><svg class="i"><use href="#i-cut"/></svg> Catálogo de servicios</h3>
+   <div class="row"><span>Corte clásico</span><b class="g">$15.000</b></div><div class="row"><span>Corte + barba</span><b class="g">$22.000</b></div><div class="row"><span>Diseño premium</span><b class="g">$30.000</b></div><div class="row"><span>Coloración / keratina</span><b class="g">$40.000</b></div></div>
+  <div class="card rv" style="--d:.1s"><h3>Colación bloqueada</h3><div class="day"><i>14–15</i></div><p class="m" style="font-size:14px">Jornada 09:00–20:00. Entre 14:00 y 15:00 el agente nunca agenda y ofrece el siguiente cupo libre.</p></div>
+  <div class="card rv" style="--d:.2s"><h3>Multi-calendario independiente</h3>
+   <div class="cal"><span class="av">F</span>Franco</div><div class="cal"><span class="av" style="background:#60a5fa">A</span>Alexis</div><div class="cal"><span class="av" style="background:#a78bfa">M</span>Mauro</div>
+   <p class="m" style="font-size:14px;margin-top:14px">Al cancelar, el cupo se libera en tiempo real.</p></div>
+ </div></section>
+
+<section class="fin"><h2 class="rv">Listo para <span class="g">trabajar solo</span></h2><p class="lead rv" style="margin-inline:auto">Cada reserva, cambio y cancelación sucede sin que nadie toque el teléfono.</p><div class="cta rv"><a class="btn gold" href="#sim">Volver al simulador</a></div></section>
+<script src="app.js"></script></body></html>

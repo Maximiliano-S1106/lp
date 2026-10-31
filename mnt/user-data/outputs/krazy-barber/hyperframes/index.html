@@ -1,0 +1,12 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<style>*{margin:0;box-sizing:border-box}body{background:#0a0a0a;font-family:system-ui,sans-serif;color:#ececec}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden}.clip{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 160px}
+h1{font-size:150px;line-height:1;font-weight:900;letter-spacing:-.04em}p{font-size:56px;color:#8c8c8c;margin-top:30px}.g{color:#D4AF37}.w{color:#25D366}</style></head><body>
+<div id="stage" data-composition-id="krazy-barber" data-start="0" data-width="1920" data-height="1080">
+<div class="clip s1" data-start="0" data-duration="4" data-track-index="0"><h1>Agente IA 24/7<br>para <span class="g">Krazy Barber</span></h1><p>Reservas por WhatsApp, sin intervención humana</p></div>
+<div class="clip s2" data-start="4" data-duration="4" data-track-index="0"><h1 class="g">$8–13 USD</h1><p>al mes. Sin comisiones por reserva.</p></div>
+<div class="clip s3" data-start="8" data-duration="4" data-track-index="0"><h1><span class="w">−80%</span> de costo</h1><p>vs. plataformas desde $40.000 CLP/mes</p></div>
+<div class="clip s4" data-start="12" data-duration="3" data-track-index="0"><h1>WhatsApp → n8n → <span class="g">Claude</span> → Calendar</h1><p>y aviso instantáneo al barbero</p></div></div>
+<script>window.__timelines=window.__timelines||{};const tl=gsap.timeline({paused:true});
+[["s1",0],["s2",4],["s3",8],["s4",12]].forEach(([s,t])=>{tl.from("."+s+" h1",{y:80,opacity:0,duration:.8,ease:"power3.out"},t+.2).from("."+s+" p",{y:40,opacity:0,duration:.7},t+.6)});
+window.__timelines["krazy-barber"]=tl;</script></body></html>
